@@ -14,13 +14,16 @@
 </div>
 
 
+## Info
+- uploaded images are saved in uploads/
+
 ## Install
 
 ```bash
 pip install flask
 ```
 
-## Run
+## Run Dev Server
 
 ```bash
 flask run --host=0.0.0.0
