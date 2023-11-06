@@ -2,7 +2,7 @@
 
 <div align="center">
   <h1>Web Mobile Cam Demo</h1>
-  <p><h3 align="center">Web based Mobile Native Camera Demo 🚀</h3></p>
+  <p><h3 align="center">Upload Images through Web Using Mobile Native Camera Demo 🚀</h3></p>
 </div>
 
 
