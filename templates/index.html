@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>web-mobile-cam-demo</title>
+
+  </head>
+  <body>
+    <h1>web-mobile-cam-demo</h1>
+
+
+    <label for="cameraFileInput">
+      <span class="btn">Open camera</span>
+
+      <input
+        id="cameraFileInput"
+        type="file"
+        accept="image/*"
+        capture="environment"
+      />
+    </label>
+
+
+    <img id="pictureFromCamera" />
+
+
+    <style>
+        #cameraFileInput {
+  display: none;
+}
+
+#pictureFromCamera {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00b531;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+}
+    </style>
+    <script>
+
+        document
+          .getElementById("cameraFileInput")
+          .addEventListener("change", function () {
+            document
+              .getElementById("pictureFromCamera")
+              .setAttribute("src", window.URL.createObjectURL(this.files[0]));
+          });
+            </script>
+  </body>
+</html>
